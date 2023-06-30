@@ -1,4 +1,5 @@
-from ex5 import CaesarCipher, VigenereCipher, getVigenereFromStr, processDirectory
+from ex5 import CaesarCipher, VigenereCipher, getVigenereFromStr, loadEncryptionSystem
+import sys
 
 
 def test1():
@@ -21,7 +22,7 @@ def test5():
         return False
     return True 
 def test8():
-    processDirectory('.')
+    loadEncryptionSystem('.')
     with open('plain.enc', 'r') as out:
         with open('plain.out', 'r') as expected:
             if out.read() != expected.read():
