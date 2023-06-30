@@ -1,4 +1,4 @@
-from hw5 import CaesarCipher, VigenereCipher, getVigenereFromStr, processDirectory
+from ex5 import CaesarCipher, VigenereCipher, getVigenereFromStr, processDirectory
 
 
 def test1():
