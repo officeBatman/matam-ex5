@@ -30,9 +30,9 @@ def test8():
     return True 
 
 def run(funcs):
-'''
-this function runs all the function in main scope with the string "test" in their name
-'''
+    '''
+    this function runs all the function in main scope with the string "test" in their name
+    '''
     tests = [f for f in funcs if 'test' in f]
     if len(sys.argv) < 2:
         for test in tests:
